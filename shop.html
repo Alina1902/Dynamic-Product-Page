@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="cart-icon">
+            <span id="cart-count">0</span>
+            <i class="fas fa-shopping-cart" id="cart-icon-btn"></i>
+        </div>
+    </header>
+    <div class="dynamic-text">
+        <h3>Lets shop <br><span class="dynamic-text-content"></span></h1>
+    </div>
+    <nav id="product-nav">
+        <ul>
+            <li><button class="product-btn" data-product="shirts">Shirts</button></li>
+            <li><button class="product-btn" data-product="dresses">Dresses</button></li>
+            <li><button class="product-btn" data-product="hijabs">Hijabs</button></li>
+            <li><button class="product-btn" data-product="shorts">Shorts</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="product-display">
+            <h2 id="product-name"></h2>
+            <img id="product-image" src="" alt="Product Image">
+            <div id="product-specs">
+                <p id="product-availability"></p>
+                <div id="product-rating">
+                    <span class="stars"></span>
+                    <span class="rating-value"></span>
+                </div>
+            </div>
+            <div id="product-options">
+                <div id="color-options"></div>
+                <div id="size-options"></div>
+                <p id="product-price"></p>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-popup" class="hidden">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="close-cart">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
