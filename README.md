@@ -1,0 +1,1 @@
+# Dynamic-Product-Page. For this task to run , clone this repository in your vscode or any other editor that you use. Also, make specific folders too to incorporate the images in your directory as given in code
